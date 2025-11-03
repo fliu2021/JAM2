@@ -28,7 +28,7 @@ If you already have PYTHIA8.315, find the lib directory of it and go the "JAM2 i
    
 5. If you don't want to make a install directory , directly type:
    ```
-   make -j8
+   make -j16
    ```
 6. You can alway find the bin, include, and lib directory in the ~/Event_Generator/pythia8315.
    If you do "make install", you can also find bin, include, lib in the "~/Event_Generator/pythia8315_install"
@@ -58,7 +58,7 @@ Now you are ready to go to install JAM2
    ```
    cd jam2
    ```
-   Find the execuable executable "jam".
+   Find the execuable program "jam".
 
 # RUN JAM2 (for test)
 To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
@@ -67,5 +67,63 @@ To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
     ./jam 
     
     
-You can get 2 event2 within 5 second. 
+You can get 2 event2 within 5 second.
+
 # RUN JAM2(on a cluster)
+1. To simulate JAM2 with lambda potential with a cluster, download the the main.cxx and run.sh in this repo:
+   ```
+   cd ~/Event_Genarator/jam2/jam2/
+   git clone https://github.com/fliu2021/JAM2.git
+   mv JAM2/main.cxx ./
+   mv JAM2/run.sh ./
+   rm -r JAM2
+   ```
+2. Open the main.cxx and have a look at line
+   ```
+   string outputFname="/Users/feng/Documents/physics_project/test_EG/JAM2_test_storage/JAM2_sqrt_SNN_7p7_";
+   ```
+   This is the directory to put the output file, modify this and type:
+   ```
+   make
+   ```
+3. Now you get a new execuable program "jam". Make sure the "run.sh" in the same directory as the execuable program "jam", type:
+   ```
+   chmod u+x run.sh
+   ```
+4. open the run.sh,have a look at:
+   ```
+   Main:numberOfEvents = 10 ! number of events to generate
+   Beams:eCM =  7.7 ! the center of mass energy
+   ```
+   For the purpose of test, set the numberOfEvents to be 10, wich takes about 12 seconds. (To run on a cluster, a suggestion for the numberOfEvents per job is 5000 )
+ 5.If those two parameters are correct, run run.sh by
+   ```
+   ./run.sh 1
+   ```
+   Here 1 is the jobnumber. (Now need to input the random seed, because this is done in the run.sh file)
+ 6. Now you can find the outputfile "JAM2_sqrt_SNN_7p7_1.dat".
+ 
+ 7. To run on a cluster, use "run.sh" as the execuable:
+    ```
+    chmod u+x run.sh
+    ./run.sh $(job_number)
+    ``` 
+     
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
