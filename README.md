@@ -71,7 +71,7 @@ To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
     ./jam 
     
     
-You can get 2 event2 within 5 second.
+You can get 2 events within 5 second.
 
 # RUN JAM2(on a cluster)
 1. To simulate JAM2 with lambda potential with a cluster, download the the main.cxx and run.sh in this repo:
