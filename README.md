@@ -60,7 +60,7 @@ Now you are ready to go to install JAM2
    ```
    Find the execuable executable "jam".
 
-#RUN JAM2 (for test)
+# RUN JAM2 (for test)
 To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
     ```
     mv ./input/jamtest.inp ./jam.inp
