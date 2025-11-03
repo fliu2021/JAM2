@@ -67,7 +67,7 @@ Now you are ready to go to install JAM2
 # RUN JAM2 (for test)
 To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
 
-    mv ./input/jamtest.inp ./jam.inp
+    mv ./input/rqmdv.lambda.inp ./jam.inp
     ./jam 
     
     
