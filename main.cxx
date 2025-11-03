@@ -1027,7 +1027,7 @@ void xsec(string file, string outfile)
 
 int main(int argc, char* argv[]) {
 
-  string outputFname="/Users/feng/Documents/physics_project/test_EG/JAM2_test_storage/test_";
+  string outputFname="/Users/feng/Documents/physics_project/test_EG/JAM2_test_storage/JAM2_sqrt_SNN_7p7_";
   string inputFname="./playground/jam_";
   string outfile="xsec.dat";
   MyHist* myhist = 0;
