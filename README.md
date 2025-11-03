@@ -1,7 +1,7 @@
 # JAM2
 The JAM2 Monte Corla event generator is compiled with PYTHIA8.315.(Please check this on the website of JAM2: https://gitlab.com/transportmodel/jam2 ). To download and install, please make sure you already setup PYTHIA8.315. If not follow the procedures below:
 
-#PYTHIA8.315
+# PYTHIA8.315
 If you already have PYTHIA8.315, find the lib directory of it and go the "JAM2 install" section below. 
 1. Make a directocry where you would like to put the PYTHIA8, for example:
    ```
@@ -37,7 +37,7 @@ If you already have PYTHIA8.315, find the lib directory of it and go the "JAM2 i
 
 Now you are ready to go to install JAM2 
 
-#JAM2 install 
+# JAM2 install 
 1. Download source code of JAM2 by:
    ```
    cd ~/Event_Generator
