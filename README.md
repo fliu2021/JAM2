@@ -30,10 +30,14 @@ If you already have PYTHIA8.315, find the lib directory of it and go the "JAM2 i
    ```
    make -j16
    ```
-6. You can alway find the bin, include, and lib directory in the ~/Event_Generator/pythia8315.
-   If you do "make install", you can also find bin, include, lib in the "~/Event_Generator/pythia8315_install"
-
-   Anyway, you can always get the complile command by running the bin.
+6. You can alway find the bin, include, and lib directory in the
+   ```
+   ~/Event_Generator/pythia8315.
+   ```
+   If you do "make install", you can ALSO find bin, include, lib in the
+   ```
+   ~/Event_Generator/pythia8315_install
+   ```
 
 Now you are ready to go to install JAM2 
 
