@@ -68,7 +68,7 @@ Now you are ready to go to install JAM2
 To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
    
     mv ./input/rqmdv.lambda.inp ./jam.inp
-    vim jam.inp (modity Main:numberOfEvents = 2)
+    vim jam.inp (modify Main:numberOfEvents = 2)
     ./jam 
     
     
