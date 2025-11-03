@@ -62,9 +62,10 @@ Now you are ready to go to install JAM2
 
 # RUN JAM2 (for test)
 To run JAM2, you need a "jam.inp" as an input file. For a purpose of test, type:
-    ```
+
     mv ./input/jamtest.inp ./jam.inp
     ./jam 
-    ```   
+    
+    
 You can get 2 event2 within 5 second. 
-#RUN JAM2(on a cluster)
+# RUN JAM2(on a cluster)
