@@ -83,7 +83,7 @@ You can get 2 events within 5 second.
    mv JAM2/run.sh ./
    rm -r JAM2
    ```
-2. Open the main.cxx and have a look at line
+2. Open the main.cxx and have a look at line 1030
    ```
    string outputFname="/Users/feng/Documents/physics_project/test_EG/JAM2_test_storage/JAM2_sqrt_SNN_7p7_";
    ```
